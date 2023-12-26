@@ -17,11 +17,16 @@ class DocApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
+      //size app
       designSize: Size(375, 812),
       minTextAdapt: true,
       child: MaterialApp(
         title: "Doc App",
-        theme: ThemeData(primaryColor: AppColors.blue),
+        theme: ThemeData(
+          primaryColor: AppColors.blue,
+          scaffoldBackgroundColor: Colors.white,
+        ),
+        debugShowCheckedModeBanner: false,
         initialRoute: Routes.onBoardingScreen,
         onGenerateRoute: appRouter.generateRoute,
       ),
