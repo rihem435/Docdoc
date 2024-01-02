@@ -5,9 +5,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TextStyles {
-  static TextStyle font24Black700Weight = TextStyle(
+  static TextStyle font24BlackBold = TextStyle(
     fontSize: 24.sp,
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeightHelper.bold,
     color: Colors.black,
   );
   static TextStyle font32BlueBold = TextStyle(
@@ -22,7 +22,7 @@ class TextStyles {
   );
   static TextStyle font16WhiteSemiBold = TextStyle(
     fontSize: 16.sp,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeightHelper.semiBold,
     color: Colors.white,
   );
   static TextStyle font24BlueBold = TextStyle(
@@ -45,4 +45,25 @@ class TextStyles {
     fontWeight: FontWeightHelper.medium,
     color: AppColors.eerieBlack,
   );
+  static TextStyle font12BlueRegular = TextStyle(
+    fontSize: 12.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: AppColors.blue,
+  );
+  static TextStyle font11BlackSemiBold = TextStyle(
+      fontSize: 11.sp,
+      fontWeight: FontWeightHelper.semiBold,
+      color: AppColors.eerieBlack);
+  static TextStyle font11CyanBlueSemiBold = TextStyle(
+      fontSize: 11.sp,
+      fontWeight: FontWeightHelper.semiBold,
+      color: AppColors.cyanBlue);
+  static TextStyle font11Grey62Meduim = TextStyle(
+      fontSize: 11.sp,
+      fontWeight: FontWeightHelper.medium,
+      color: AppColors.grey62);
+  static TextStyle font11EerieBlackMeduim = TextStyle(
+      fontSize: 11.sp,
+      fontWeight: FontWeightHelper.medium,
+      color: AppColors.eerieBlack);
 }

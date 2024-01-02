@@ -12,7 +12,7 @@ class AppTextFormField extends StatelessWidget {
   final String hintText;
   final bool? isObscureText;
   final Widget? suffixIcon;
-
+  final Color? backgroundColor;
   AppTextFormField(
       {Key? key,
       this.contentPadding,
@@ -22,40 +22,42 @@ class AppTextFormField extends StatelessWidget {
       this.hintStyle,
       required this.hintText,
       this.isObscureText,
-      this.suffixIcon})
+      this.suffixIcon,
+      this.backgroundColor})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       decoration: InputDecoration(
-        //uses less vertical space
-        isDense: true,
-        contentPadding: contentPadding ??
-            EdgeInsets.symmetric(
-              horizontal: 20.w,
-              vertical: 18.h,
-            ),
-        focusedBorder: focusedBorder ??
-            OutlineInputBorder(
-              borderRadius: BorderRadius.circular(16),
-              borderSide: const BorderSide(
-                color: AppColors.blue,
-                width: 1,
+          //uses less vertical space
+          isDense: true,
+          contentPadding: contentPadding ??
+              EdgeInsets.symmetric(
+                horizontal: 20.w,
+                vertical: 18.h,
               ),
-            ),
-        enabledBorder: enabledBorder ??
-            OutlineInputBorder(
-              borderRadius: BorderRadius.circular(16),
-              borderSide: const BorderSide(
-                color: AppColors.veryLightGrey,
-                width: 1,
+          focusedBorder: focusedBorder ??
+              OutlineInputBorder(
+                borderRadius: BorderRadius.circular(16),
+                borderSide: const BorderSide(
+                  color: AppColors.blue,
+                  width: 1,
+                ),
               ),
-            ),
-        hintStyle: hintStyle ?? TextStyles.font14EerieBlackMedium,
-        hintText: hintText,
-        suffixIcon: suffixIcon,
-      ),
+          enabledBorder: enabledBorder ??
+              OutlineInputBorder(
+                borderRadius: BorderRadius.circular(16),
+                borderSide: const BorderSide(
+                  color: AppColors.veryLightGrey,
+                  width: 1,
+                ),
+              ),
+          hintStyle: hintStyle ?? TextStyles.font14EerieBlackMedium,
+          hintText: hintText,
+          suffixIcon: suffixIcon,
+          fillColor: backgroundColor ?? AppColors.moreLightGrey,
+          filled: true),
       obscureText: isObscureText ?? false,
       style: TextStyles.font14EerieBlackMedium,
     );
