@@ -51,7 +51,7 @@ dependencies:
   retrofit: ^4.0.3
   retrofit_generator: ^8.0.4
  
-  # Pretty Dio logger is a Dio interceptor that logs network calls in a pretty, easy to read format.
+  # Pretty Dio logger is a Dio interceptor that logs network calls in a pretty, easy to read format. in terminal
   pretty_dio_logger: ^1.3.1
   # localization , translate
   intl: ^0.18.0
