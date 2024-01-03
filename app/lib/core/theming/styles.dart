@@ -66,4 +66,16 @@ class TextStyles {
       fontSize: 11.sp,
       fontWeight: FontWeightHelper.medium,
       color: AppColors.eerieBlack);
+
+
+static TextStyle font15EerieDarkMeduim = TextStyle(
+      fontSize: 15.sp,
+      fontWeight: FontWeightHelper.medium,
+      color: AppColors.eerieBlack);
+static TextStyle font14BlueSemiBold = TextStyle(
+      fontSize: 14.sp,
+      fontWeight: FontWeightHelper.semiBold,
+      color: AppColors.blue);
+
+
 }
