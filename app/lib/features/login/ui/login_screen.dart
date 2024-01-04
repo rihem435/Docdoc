@@ -48,7 +48,7 @@ class LoginScreen extends StatelessWidget {
                       style: TextStyles.font12BlueRegular,
                     ),
                   ),
-                  verticalSpace(32),
+                  verticalSpace(52),
                   AppTextButton(
                     text: "Login",
                     onPressed: () {
@@ -56,10 +56,10 @@ class LoginScreen extends StatelessWidget {
                     },
                     textStyle: TextStyles.font16WhiteSemiBold,
                   ),
-                  verticalSpace(100),
-                  TermsAndConditionsText(),
+                  verticalSpace(50),
+                  const TermsAndConditionsText(),
                   verticalSpace(24),
-                  const AlreadyHaveAccountText(),
+                  const DontHaveAccountText(),
                   const LoginBlocListener(),
                 ],
               )
